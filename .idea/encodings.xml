@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/PtrHandler.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/PtrUIHandler.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/PtrUIHandlerHolder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/PtrUIHandlerHook.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/header/StoreHouseBarItem.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/header/StoreHouseHeader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/header/StoreHousePath.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/indicator/PtrIndicator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/indicator/PtrTensionIndicator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/util/PtrCLog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/gordon/shop/view/refreshlayout/util/PtrLocalDisplay.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

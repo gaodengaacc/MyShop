@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Demo\Shop\app\libs\volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c6eb0da8bda477749c293f58784ef86f756d4f13">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\volley-076c3ddef8be72c24f994b8f61f987026bd4a530.jar" />
+    </item>
+    <item
+        jar="D:\Demo\Shop\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-3e2e07b07586f963e599a36eb3eafc81369ce1f9.jar" />
+    </item>
+    <item
+        jar="D:\Demo\Shop\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\classes-77bbe5b64c703b24e3b76d2f4507c6032ff56fcd.jar" />
+    </item>
+    <item
+        jar="C:\Users\lyuser\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.0\f1e24ac977505d1fdcabadaa5be1f41dc11c4286\butterknife-7.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f1e24ac977505d1fdcabadaa5be1f41dc11c4286">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\butterknife-7.0.0-3522635055e4a69c68ee84bdc70a20942fe4fc39.jar" />
+    </item>
+    <item
+        jar="C:\Users\lyuser\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\library-2.4.0-ba5a07a105115e0ea87271d4a1feaeeed0dbffc7.jar" />
+    </item>
+    <item
+        jar="D:\Demo\Shop\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\classes-cb10eae04ab44d05a3ced2991a2780c477a4d16a.jar" />
+    </item>
+    <item
+        jar="D:\android_sdk\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-1b6ac4939c555d95f303fbd3f2a7b1ed25ef559a.jar" />
+    </item>
+    <item
+        jar="C:\Users\lyuser\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.7\cd78109020f9ec803ef4e652c17ee4615b03e20a\android-async-http-1.4.7.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cd78109020f9ec803ef4e652c17ee4615b03e20a">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.7-a0b0c0d131595ecf936b762edf063a5bf6f0c91e.jar" />
+    </item>
+    <item
+        jar="C:\Users\lyuser\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="D:\Demo\Shop\app\build\intermediates\pre-dexed\debug\gson-2.3.1-be3d467b242fc7296ff58144a1eb0d4886d4d4ca.jar" />
+    </item>
+
+</items>
