@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.youban.msgs.R;
+import com.gordon.shop.R;
 
 
 /**

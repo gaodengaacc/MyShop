@@ -5,4 +5,32 @@
     <!--mainActivity-->
     <dimen name="tab_height">45dp</dimen>
     <dimen name="top_height">46dp</dimen>
+
+
+
+    <!-- 控件之间间隔 -->
+    <dimen name="global_padding1">7dp</dimen>
+    <dimen name="global_padding2">9dp</dimen>
+    <dimen name="global_padding3">13dp</dimen>
+    <!--
+    <dimen name="global_padding4">29dp</dimen>
+     -->
+    <dimen name="global_padding4">40dp</dimen>
+    <dimen name="global_padding5">33dp</dimen>
+    <!--
+    <dimen name="global_padding6">51dp</dimen>
+     -->
+    <dimen name="global_padding6">48dp</dimen>
+    <dimen name="global_padding7">11dp</dimen>
+    <dimen name="global_padding8">17dp</dimen>
+    <dimen name="global_padding9">20dp</dimen>
+    <dimen name="global_padding10">14dp</dimen>
+    <dimen name="global_padding11">38dp</dimen>
+    <dimen name="global_padding12">18dp</dimen>
+    <dimen name="global_padding13">3dp</dimen>
+    <dimen name="global_padding14">40dp</dimen>
+    <dimen name="global_padding15">30dp</dimen>
+    <dimen name="global_padding16">5dp</dimen>
+    <dimen name="global_padding17">8dp</dimen>
+    <dimen name="global_padding18">50dp</dimen>
 </resources>

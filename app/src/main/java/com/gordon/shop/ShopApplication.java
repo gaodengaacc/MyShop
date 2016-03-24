@@ -2,6 +2,8 @@ package com.gordon.shop;
 
 import android.app.Application;
 
+import com.bumptech.glide.Glide;
+
 /**
  * @author Gordon
  * @since 2016/3/21

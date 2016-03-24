@@ -64,7 +64,7 @@ public class NewsBannerView extends BannerView {
 	public void addBannerSliderViewNew(List<String> topicDetailsList) {
 		if (topicDetailsList != null && topicDetailsList.size() > 0) {
 //			final Map<Long, Msgs.PostElement> postElementMap = new HashMap<>();
-//			for (final Msgs.PostbarTopicDetail topicDetail : topicDetailsList) {
+			for (final String topicDetail : topicDetailsList) {
 //				Msgs.PostContent postContent = topicDetail.getPostContent();
 //				List<Msgs.PostElement> postElementList = postContent.getElementsList();
 //				if (postElementList != null && postElementList.size() > 0) {
@@ -96,7 +96,7 @@ public class NewsBannerView extends BannerView {
 //					}
 //				});
 //				mCustoemIndicatorLayout.addSlider(bannerSliderView);
-//			}
+			}
             mCustoemIndicatorLayout.setIndicatorPosition(InfiniteIndicatorLayout.IndicatorPosition.Right_Bottom);
             mCustoemIndicatorLayout.setInterval(8 * 1000);
             CircleIndicator circleIndicator = ((CircleIndicator) mCustoemIndicatorLayout.getPagerIndicator());
