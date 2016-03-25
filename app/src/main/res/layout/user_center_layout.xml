@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgcw"
@@ -35,8 +35,8 @@
                     android:layout_marginTop="10dp"
                     android:padding="2dp"
                     android:src="@mipmap/common_user_icon_default"
-                    iwgame:border_color="@color/bgcw"
-                    iwgame:border_width="2dp"></com.gordon.shop.view.CircleImageView>
+                    app:border_color="@color/bgcw"
+                    app:border_width="2dp"></com.gordon.shop.view.CircleImageView>
 
                 <TextView
                     android:id="@+id/user_nickname"

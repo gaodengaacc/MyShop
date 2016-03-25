@@ -4,6 +4,7 @@ import android.content.Context;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.gordon.shop.R;
 
 /**
@@ -19,7 +20,7 @@ public class ImageUtils {
      * @param resid
      * @param defaultResid
      */
-    public static void showImage(Context context,ImageView view, String resid, int defaultResid) {
+    public static void showImage(Context context,ImageView view, int resid, int defaultResid) {
         Glide.with(context)
                 .load(resid)
                 .placeholder(defaultResid)
@@ -33,10 +34,26 @@ public class ImageUtils {
      * @param view
      * @param resid
      */
-    public static void showImage(Context context,ImageView view, String resid) {
+    public static void showImage(Context context,ImageView view, int resid) {
         Glide.with(context)
                 .load(resid)
                 .animate(R.anim.fade_in)
+                .crossFade()
+                .into(view);
+    }
+    /**
+     * 加载图片
+     *
+     * @param view
+     * @param resid
+     */
+    public static void showGifImage(Context context,ImageView view, int resid) {
+        Glide.with(context)
+                .load(resid)
+                .asGif()
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                .animate(R.anim.fade_in)
+                .centerCrop()
                 .crossFade()
                 .into(view);
     }
@@ -50,7 +67,6 @@ public class ImageUtils {
     public static void showMediumImage(ImageView view, String resid, int defaultResid) {
 
     }
-
     /**
      * 加载图片
      *

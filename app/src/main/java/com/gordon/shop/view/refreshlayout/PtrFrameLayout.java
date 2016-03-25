@@ -319,7 +319,7 @@ public class PtrFrameLayout extends ViewGroup {
                     return dispatchTouchEventSupper(e);
                 }
 
-                boolean moveDown = offsetY > 0;
+                boolean moveDown = offsetY > 20;
                 boolean moveUp = !moveDown;
                 boolean canMoveUp = mPtrIndicator.hasLeftStartPosition();
 

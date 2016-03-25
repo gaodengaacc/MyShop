@@ -26,6 +26,7 @@ public class BannerSliderView extends BaseSliderView {
 //		} else {
 //			ImageViewUtil.showImage(target, "", R.drawable.banner_icon_default);
 //		}
+		target.setImageResource(postElement);
 		bindEventAndShow(v, target);
 		return v;
 	}
