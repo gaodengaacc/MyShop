@@ -40,11 +40,11 @@ public class PageMainFragment extends BaseFragment {
     private String mTitlePre;
     @Bind(R.id.store_house_ptr_frame)
     PtrFrameLayout frame;
-    @Bind(R.id.page_main_content)
-    LinearLayout content;
+    //    @Bind(R.id.page_main_content)
+//    LinearLayout content;
     @Bind(R.id.titleTxt)
     TextView titleText;
-//    @Bind(R.id.page_main_gif_imageView)
+    //    @Bind(R.id.page_main_gif_imageView)
 //    ImageView gif;
     @Bind(R.id.main_listView)
     RecyclerView main_listView;
@@ -59,12 +59,13 @@ public class PageMainFragment extends BaseFragment {
 //        ImageUtils.showGifImage(getActivity(), gif, R.mipmap.splash_gif);
 //        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 4);
 //        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        main_listView.setLayoutManager(new RecyclerView.LayoutManager() {
-            @Override
-            public RecyclerView.LayoutParams generateDefaultLayoutParams() {
-                return null;
-            }
-        });
+//        main_listView.setLayoutManager(new RecyclerView.LayoutManager() {
+//            @Override
+//            public RecyclerView.LayoutParams generateDefaultLayoutParams() {
+//                return null;
+//            }
+//        });
+        main_listView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
         List<Integer> list = new ArrayList<>();
         list.add(R.mipmap.bottom_select2);
         list.add(R.mipmap.bottom_select3);
@@ -127,7 +128,11 @@ public class PageMainFragment extends BaseFragment {
         frame.setPtrHandler(new PtrHandler() {
             @Override
             public boolean checkCanDoRefresh(PtrFrameLayout frame, View content, View header) {
-                return true;
+                LinearLayoutManager layoutManager = (LinearLayoutManager) main_listView.getLayoutManager();
+                if (layoutManager.findFirstVisibleItemPosition() == 0 && layoutManager.findFirstCompletelyVisibleItemPosition()==0)
+                    return true;
+                else
+                    return false;
             }
 
             @Override

@@ -22,6 +22,7 @@ import com.gordon.shop.R;
 import com.gordon.shop.view.infiniteindicator.BannerView;
 import com.gordon.shop.view.infiniteindicator.InfiniteIndicatorLayout;
 import com.gordon.shop.view.infiniteindicator.indicator.CircleIndicator;
+import com.gordon.shop.view.infiniteindicator.slideview.BaseSliderView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,6 +34,7 @@ import java.util.Map;
  *
  */
 public class NewsBannerView extends BannerView {
+    private onItemClick onItemClickListener;
 
     public NewsBannerView(Context context) {
         super(context);
@@ -45,6 +47,14 @@ public class NewsBannerView extends BannerView {
         addBannerSliderViewNew(list);
     }
 
+    public interface onItemClick {
+        public void onClick(List list, int position);
+    }
+
+    public void setOnItemClickListener(onItemClick clickListener) {
+        this.onItemClickListener = clickListener;
+
+    }
     public NewsBannerView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
@@ -71,10 +81,10 @@ public class NewsBannerView extends BannerView {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
-    public void addBannerSliderViewNew(List<Integer> topicDetailsList) {
+    public void addBannerSliderViewNew(final List<Integer> topicDetailsList) {
         if (topicDetailsList != null && topicDetailsList.size() > 0) {
 //			final Map<Long, Msgs.PostElement> postElementMap = new HashMap<>();
-            for (final Integer topicDetail : topicDetailsList) {
+            for (int i=0;i<topicDetailsList.size();i++) {
 //				Msgs.PostContent postContent = topicDetail.getPostContent();
 //				List<Msgs.PostElement> postElementList = postContent.getElementsList();
 //				if (postElementList != null && postElementList.size() > 0) {
@@ -86,26 +96,16 @@ public class NewsBannerView extends BannerView {
 //					}
 //				}
 //				Msgs.PostElement element = postElementMap.get(topicDetail.getId());
-				BannerSliderView bannerSliderView = new BannerSliderView(context, topicDetail);
+                BannerSliderView bannerSliderView = new BannerSliderView(context, topicDetailsList.get(i));
 //				bannerSliderView.setScaleType(BaseSliderView.ScaleType.CenterCrop);
-//				bannerSliderView.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
-//					@Override
-//					public void onSliderClick(BaseSliderView slider) {
-//						if (FastClickLimitUtil.isFastClick())
-//							return;
-//						mCustoemIndicatorLayout.setEnabled(false);
-//						Intent intent = new Intent(context, TopicDetailActivity.class);
-//						Bundle bundle = new Bundle();
-//						bundle.putLong(SystemConfig.BUNDLE_NAME_TOPICDETAIL_TOPICID, topicDetail.getId());
-//						bundle.putLong(SystemConfig.SHAREDPREFERENCES_NAME_GLOBAL_GID, topicDetail.getGameid());
-//						bundle.putInt(SystemConfig.SHAREDPREFERENCES_NAME_GLOBAL_MODE, TopicDetailFragment.MODE_GENERAL);
-//						bundle.putInt(SystemConfig.SHAREDPREFERENCES_NAME_GLOBAL_POSTBAR_DETAIL_MODE, TopicReplyListAdapter.MODE_POSTBAR_SHOW);
-//						bundle.putString(SystemConfig.SHAREDPREFERENCES_NAME_GLOBAL_GAMENAME, topicDetail.getPostbarName());
-//						intent.putExtra(SystemConfig.BUNDLEEXTRA_NAME, bundle);
-//						context.startActivity(intent);
-//					}
-//				});
-				mCustoemIndicatorLayout.addSlider(bannerSliderView);
+                final int finalI = i;
+                bannerSliderView.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
+                    @Override
+                    public void onSliderClick(BaseSliderView slider) {
+                       onItemClickListener.onClick(topicDetailsList, finalI);
+                    }
+                });
+                mCustoemIndicatorLayout.addSlider(bannerSliderView);
             }
             mCustoemIndicatorLayout.setIndicatorPosition(InfiniteIndicatorLayout.IndicatorPosition.Right_Bottom);
             mCustoemIndicatorLayout.setInterval(8 * 1000);

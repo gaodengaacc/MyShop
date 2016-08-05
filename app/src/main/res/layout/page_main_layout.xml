@@ -10,7 +10,7 @@
     <com.gordon.shop.view.refreshlayout.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
         android:id="@+id/store_house_ptr_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/tc1"
         cube_ptr:ptr_duration_to_close="300"
         cube_ptr:ptr_duration_to_close_header="2000"
@@ -18,15 +18,6 @@
         cube_ptr:ptr_pull_to_fresh="false"
         cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
         cube_ptr:ptr_resistance="1.7">
-
-            <LinearLayout
-                android:id="@+id/page_main_content"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/bgcw"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:padding="10dp">
 
                 <!--<LinearLayout-->
                     <!--android:id="@+id/page_main_top_content"-->
@@ -51,11 +42,10 @@
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/main_listView"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:background="@color/bgcw"
                     android:divider="@null"
                     android:dividerHeight="0dp"></android.support.v7.widget.RecyclerView>
 
-            </LinearLayout>
     </com.gordon.shop.view.refreshlayout.PtrFrameLayout>
 </LinearLayout>

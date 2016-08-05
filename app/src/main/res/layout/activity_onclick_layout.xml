@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <com.gordon.shop.view.MyLinearLayout
+        android:id="@+id/layout_button_onclick"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.gordon.shop.view.MyButton
+            android:id="@+id/button_onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮点击事件1"
+            android:visibility="visible"></com.gordon.shop.view.MyButton>
+
+        <com.gordon.shop.view.MyTextView
+            android:id="@+id/text_onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#000000"
+            android:text="文本点击事件2"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:visibility="visible"></com.gordon.shop.view.MyTextView>
+        <com.gordon.shop.view.MyImageView
+            android:id="@+id/image_onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher"
+            android:visibility="visible"></com.gordon.shop.view.MyImageView>
+    </com.gordon.shop.view.MyLinearLayout>
+</LinearLayout>

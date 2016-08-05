@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.BaseAdapter;
 import android.widget.RadioGroup;
 
+import com.gordon.shop.news.activity.NewsFragment;
+import com.gordon.shop.pagemain.activity.NewsBannerView;
 import com.gordon.shop.pagemain.activity.PageMainFragment;
 import com.gordon.shop.usercenter.activity.UserCenterFragment;
 
@@ -31,6 +33,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     private SampleFragment fragment;
     private UserCenterFragment userCenterFragment;
     private PageMainFragment pageMainFragment;
+    private NewsFragment newsFragment;
     @Bind(R.id.main_tab_rg)
     RadioGroup bottom_tabs;
     @Override
@@ -65,8 +68,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         addFragment(fragment, SampleFragment.class.getSimpleName());
         fragment = SampleFragment.newInstance();
         addFragment(fragment, SampleFragment.class.getSimpleName());
-        fragment = SampleFragment.newInstance();
-        addFragment(fragment, SampleFragment.class.getSimpleName());
+        newsFragment = NewsFragment.newInstance();
+        addFragment(newsFragment, NewsFragment.class.getSimpleName());
         userCenterFragment = UserCenterFragment.newInstance();
         addFragment(userCenterFragment, UserCenterFragment.class.getSimpleName());
         changeTabContent(pageMainFragment,PageMainFragment.class.getSimpleName());
@@ -130,7 +133,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                      changeTabContent(fragment, SampleFragment.class.getSimpleName());
                      break;
                  case R.id.main_tab_4:
-                     changeTabContent(fragment, SampleFragment.class.getSimpleName());
+                     changeTabContent(newsFragment, NewsFragment.class.getSimpleName());
                      break;
                  case R.id.main_tab_5:
                      changeTabContent(userCenterFragment, UserCenterFragment.class.getSimpleName());

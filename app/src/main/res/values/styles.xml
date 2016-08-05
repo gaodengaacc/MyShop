@@ -71,4 +71,8 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.6</item>
     </style>
+    <style name="Theme.WindowSet" parent="android:Theme">
+        <item name="android:windowBackground">@color/crn</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>
